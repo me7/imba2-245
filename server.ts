@@ -1,6 +1,9 @@
 import {Elysia} from 'elysia'
+import {cors} from '@elysiajs/cors'
+
 
 new Elysia()
-.get('/', () => 'Hello Elysia!')
-.get('hi', () => 'hi')
+.use(cors())
+.get('/api', () => 'Hello Elysia!')
+.get('/api/hi', () => new Date().toISOString())
 .listen(8080)

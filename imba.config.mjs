@@ -5,5 +5,13 @@ export default {
 		// It will be merged with the default config bundled with imba
 		plugins: [], // same for plugins
 	},
-	// server: {}
+	// server: {
+	// 	proxy: {
+	// 		'/api': {
+	// 			target:'http://localhost:8080',
+	// 			changeOrigin: true,
+	// 			rewrite: (path) => path.replace(/^\/api/, ''),
+	// 		}
+	// 	}
+	// }
 }
