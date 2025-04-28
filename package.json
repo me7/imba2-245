@@ -1,0 +1,17 @@
+{
+  "name": "imba2-245",
+  "type": "module",
+  "scripts": {
+    "dev": "imba serve",
+    "server": "bun run --hot server.ts",
+    "build": "imba build",
+    "preview": "imba preview"
+  },
+  "devDependencies": {
+    "imba": "^2.0.0-alpha.245",
+    "vite": "^6.3.3"
+  },
+  "dependencies": {
+    "elysia": "^1.2.25"
+  }
+}
